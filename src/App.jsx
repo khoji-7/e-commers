@@ -10,6 +10,7 @@ import Placeholder from './pages/Placeholder'
 import Product from './pages/Product'
 import Login from './pages/Login'
 import Navbar from './components/Navbar'
+import "./index.css"
 
 const App = () => {
   return (
