@@ -15,7 +15,7 @@ const RelatedProduct = ({ category, subCategory }) => {
             productsCopy = productsCopy.filter((item) => subCategory === item.subCategory);
             setRelated(productsCopy.slice(0, 5));
         }
-    }, [products, category, subCategory]); // Dependency array qo'shildi
+    }, [products]); // Dependency array qo'shildi
 
     return (
         <div className='my-24'>
