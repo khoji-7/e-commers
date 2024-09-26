@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../context/ShopContext'
 import Title from '../components/Title';
 import { assets } from '../assets/frontend_assets/assets';
+import CartTotal from '../components/CartTotal';
 
 const Cart = () => {
 
@@ -38,7 +39,7 @@ const Cart = () => {
             const productData = products.find((product)=>product._id === item._id);
             return(
               <div key={index} className='py-4 border-t text-gray-700 grid grid-cols-[4fr_0.5fr_0.5fr sm:grid-cols-[4fr_2fr_0.5fr items-center gap-4'>
-                  <div className='flex items-start gap-6'>
+                  <div className='flex items-center gap-6'>
                       <img src={productData.image[0]} className='w-16 sm:w-20' alt="" />
                       <div>
                         <p className='text-xs sm:text-lg font-medium'> 
@@ -61,6 +62,11 @@ const Cart = () => {
             )
           })
         }
+      </div>
+      <div className='flex justify-end my-20'>
+        <div className='w-full sm:w-[450px]'>
+          <CartTotal />
+         </div>
       </div>
     </div>
   )
