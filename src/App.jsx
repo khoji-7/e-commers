@@ -8,13 +8,13 @@ import About from './pages/About';
 import Cart from './pages/Cart';
 import Contact from './pages/Contact';
 import Order from './pages/Order';
-import Placeholder from './pages/Placeholder';
 import Product from './pages/Product';
 import Login from './pages/Login';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Searchbar from './components/Searchbar';
 import './index.css';
+import PlaceOrder from './pages/PlaceOrder';
 
 const App = () => {
   return (
@@ -29,7 +29,7 @@ const App = () => {
         <Route path='/cart' element={<Cart />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/order' element={<Order />} />
-        <Route path='/placeholder' element={<Placeholder />} />
+        <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/product/:productId' element={<Product />} />        <Route path='/login' element={<Login />} />
       </Routes>
       <Footer />
