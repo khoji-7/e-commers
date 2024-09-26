@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from '../components/Title'
 import { assets } from '../assets/frontend_assets/assets'
+import NewsletterBox from '../components/NewsletterBox'
 
 const About = () => {
     return (
@@ -25,6 +26,36 @@ const About = () => {
                     </p>
                 </div>
             </div>
+            <div className='text-4xl py-4 ' >
+                  <Title text1={"Why"} text2={"Choose Us"}/>
+            </div>
+            <div className='flex flex-col md:flex-row text-sm mb-20'>
+                 <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+                    <b>
+                      Quality Assurance:
+                    </b>
+                    <p className='text-gray-500'>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quia laborum odit culpa fuga ad ipsum odio debitis. Nostrum earum sint vel quam laborum maiores!
+                    </p>
+                </div>
+                <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+                    <b>
+                      Convenience:
+                    </b>
+                    <p className='text-gray-500'>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quia laborum odit culpa fuga ad ipsum odio debitis. Nostrum earum sint vel quam laborum maiores!
+                    </p>
+                </div>
+                <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+                    <b>
+                      Exceptional Customer Service:
+                    </b>
+                    <p className='text-gray-500'>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quia laborum odit culpa fuga ad ipsum odio debitis. Nostrum earum sint vel quam laborum maiores!
+                    </p>
+                </div>
+            </div>
+            <NewsletterBox/>
 
         </div>
     )
